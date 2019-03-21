@@ -2515,7 +2515,59 @@ aside ol li .children{
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+/*
+ *
+ * Estilos Mailchimp form suscribe
+ *
+ */
+.mc4wp-form-fields{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  max-height: 40px;
+  background: blue;
+}
+.mc4wp-form-fields p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.mc4wp-form-fields p:nth-child(1){
+  border: none;
+  background: transparent;
+  width: 75%;
+}
+.mc4wp-form-fields p:nth-child(1) input{
+  width: 100%;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px;
+  color: #444;
+}
+.mc4wp-form-fields p:nth-child(2){
+  width:25%;
+}
+.mc4wp-form-fields p:nth-child(2) input{
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  outline: 0px;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+}
+.mc4wp-form-fields p:nth-child(2) input:hover{
+  background-color: rgba(238, 82, 83,1.0);
+}
 
 
 

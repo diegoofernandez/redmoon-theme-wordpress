@@ -3,10 +3,7 @@
 		<div class="float-footer"></div>
 		<div class="box-form-suscribe">
 			<div class="interna-box-form-suscribe">
-				<form>
-					<input type="email" name="" placeholder="Ingresa tu email para suscribirte">
-					<button type="submit">SUSCRIBIRME</button>
-				</form>
+			<?php echo do_shortcode('[mc4wp_form id="58"]'); ?>
 			</div>
 		</div>
 		<div class="interna-footer">
