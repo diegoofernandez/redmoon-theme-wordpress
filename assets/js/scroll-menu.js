@@ -5,11 +5,13 @@ jQuery(document).ready(function($){
         $(window).scroll(function(){
             if($(this).scrollTop() > 100){
                 $('nav').css({
-                    'background': 'rgba(238, 82, 83,1.0)'
+                    //'background': 'rgba(238, 82, 83,1.0)',
+                    'animation-name': 'animacionColorMenu'
                 });
             }else{
                 $('nav').css({
-                    'background': 'transparent'
+                    //'background': 'transparent'
+                    'animation-name': 'animacionColorMenuDefault'
                 });
             }
         });
