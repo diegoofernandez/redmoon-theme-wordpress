@@ -420,6 +420,10 @@ Text Domain: redmoon
   .box-logo{
     width: 30%;
   }
+  .box-logo img{
+    width: 80%;
+    margin-left: 10%;
+  }
   .box-logo a{
     text-decoration: none;
     outline: 0px;
@@ -433,7 +437,7 @@ Text Domain: redmoon
     margin-bottom: 0px;
   }
   .box-nav{
-    width: 55%;
+    width: 70%;
   }
   .box-nav ul{
     list-style: none;
@@ -457,6 +461,8 @@ Text Domain: redmoon
     color: #fff;
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
     position: relative;
   }
   .box-nav ul li:before{
@@ -466,7 +472,7 @@ Text Domain: redmoon
     top: -20%;
     left: -10%;;
     position: absolute;
-    background: rgba(34,34,34,1);
+    background: rgba(238, 82, 83,1.0);
     box-sizing: border-box;
     z-index: -1;
     transition: 0.3s;
@@ -562,7 +568,6 @@ Text Domain: redmoon
     float: left;
     width: 100%;
     height: 100vh;
-    background-image: url("../img/bg-header.jpg");
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
@@ -600,7 +605,6 @@ Text Domain: redmoon
     margin-bottom: 0px;
     color: #fff;
     font-size: 4em;
-    font-weight:normal;
   }
   .typed-cursor {
     color: #fff;
@@ -609,6 +613,7 @@ Text Domain: redmoon
   .contenido-header p{
     color: #fff;
     font-family: "Roboto Condensed";
+    font-style: italic;
   }
   .redes-header{
     width: 100%;

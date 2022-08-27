@@ -9,6 +9,9 @@
     <?php wp_head();?>
 	<?php 
 		echo	"<style>
+					header{
+						background-image: url('".get_theme_mod('redmoon_bg_header_url_setting')."') !important;
+					}
 					.seccion-servicios{
 						background-image: url(".get_option('background-servicios').");
 					}

@@ -5,6 +5,7 @@
 	function redmoon_customize_register($wp_customize){
 
 		redmoon_logo($wp_customize);
+		redmoon_bg_header($wp_customize);
 
 	}
 	add_action('customize_register', 'redmoon_customize_register');

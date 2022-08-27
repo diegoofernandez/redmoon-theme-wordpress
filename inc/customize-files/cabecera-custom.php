@@ -3,12 +3,12 @@
 	//logo customize
 	function redmoon_logo($wp_customize){
 
-		$wp_customize->add_panel('redmoon_logo_id', array(
+		$wp_customize->add_panel('redmoon_header_customize', array(
 
 			'priority' => 10,
 			'capability' => 'edit_theme_options',
-			'title' => __('Logo de la web', 'redmoon'),
-			'description' => __('Seleccionar y modificar el logo del sitio', 'redmoon')
+			'title' => __('Header Red Moon custom', 'redmoon'),
+			'description' => __('Modifica y personaliza el header de la web', 'redmoon')
 
 		));
 
@@ -17,8 +17,8 @@
 		$wp_customize->add_section('redmoon_imagen_texto', array(
 
 			'title' => __('Define si quieres texto o imagen', 'redmoon'),
-			'description' => __('Definiendo esta opción, el diseño se comportará mejor', 'redmoon'),
-			'panel' => 'redmoon_logo_id',
+			'description' => __('Definiendo estas opciones, el diseño se comportará mejor', 'redmoon'),
+			'panel' => 'redmoon_header_customize',
 			'capability' => 'edit_theme_options'
 
 		));
@@ -71,4 +71,32 @@
 
 	}
 
+
+	//background cabecera customize
+	function redmoon_bg_header($wp_customize){
+
+		$wp_customize->add_section('redmoon_bg_cabecera_section', array(
+
+			'title' => __('Define la imagen que deseas de fondo', 'redmoon'),
+			'description' => __('Definiendo estas opciones, el diseño se comportará mejor', 'redmoon'),
+			'panel' => 'redmoon_header_customize',
+			'capability' => 'edit_theme_options'
+
+		));
+		$wp_customize->add_setting('redmoon_bg_header_url_setting', array(
+
+			'type' => 'theme_mod',
+			'capability' => 'edit_theme_options',
+			'transport' => 'refresh', 
+			'sanitize_callback' => 'esc_url_raw'
+
+		));
+		$wp_customize->add_control('redmoon_bg_header_url_setting', array(
+			'type' => 'text',
+			'section' => 'redmoon_bg_cabecera_section',
+			'label' => 'Background header',
+			'description' => 'Ingresa el url de la imagen que quieres como fondo'
+		));
+
+	}
 ?>

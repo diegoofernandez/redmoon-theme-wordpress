@@ -20,7 +20,7 @@ jQuery(document).ready(function($){
 
     var typed = new Typed('#typed', {
         stringsElement: '#tipeador',
-        typeSpeed: 80,
+        typeSpeed: 160,
         backSpeed: 10,
         loop: true
     });
