@@ -27,6 +27,10 @@
 
     add_action('wp_enqueue_scripts', 'redmoon_load_scripts_styles');
 
+
+    /*==========================================================================
+        Cargando estilos administración WP-PANEL
+    ==========================================================================*/
     if(!function_exists('load_admin_scrips')):
         function load_admin_scripts(){
             wp_register_script('theme-option-script', get_template_directory_uri(  ).'/assets/js/options-theme.js', array('jquery'), '1', true);
