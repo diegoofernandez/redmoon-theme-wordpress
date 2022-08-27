@@ -1,5 +1,8 @@
 <?php 
-
+ 
+ /*==========================================================================
+    Agregando el menu de opciones en WP PANEL
+ ==========================================================================*/   
  if(!function_exists('redmoon_main_options')):
     function redmoon_main_options(){
         
@@ -10,9 +13,9 @@
  add_action('admin_menu', 'redmoon_main_options');
   
 
- /**
-  * Plantilla de las opciones
-  */
+ /*==========================================================================
+   Plantilla de las opciones
+  ==========================================================================*/
  function pagina_main_options_redmoon(){
 
     if(!current_user_can( 'edit_theme_options' )){

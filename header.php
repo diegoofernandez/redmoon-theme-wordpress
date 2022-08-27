@@ -28,7 +28,19 @@
     
     <nav>
 		<div class="box-logo">
-			<a href="#"><h1>Red Moon Portfolio</h1></a>
+				<?php 
+					if(get_theme_mod('texto_imagen_logo') == 2){
+						?>
+						<a href="#"><h1><?php
+							echo get_theme_mod('redmoon_logo_texto');?>
+						</h1></a><?php
+					}else if (get_theme_mod('texto_imagen_logo') == 1){
+						?>
+						<a href="#"><img src="<?php echo get_theme_mod('redmoon_logo_imagen');?>"></a><?php
+					}else{
+						echo "No hay logo";
+					}
+				?>	
 		</div>
 		<div class="box-nav">
 			<?php

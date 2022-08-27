@@ -53,4 +53,7 @@
  //carga de theme options
  require_once get_template_directory(  ).'/inc/theme-options/main-options.php';
 
+ //carga de CUSTOMIZER's
+ require_once get_template_directory(  ).'/inc/customize-files/guardian-custom.php';
+
 
