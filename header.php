@@ -13,16 +13,16 @@
 						background-image: url('".get_theme_mod('redmoon_bg_header_url_setting')."') !important;
 					}
 					.seccion-servicios{
-						background-image: url(".get_option('background-servicios').");
+						background-image: url(".get_option('background-servicios').") !important;
 					}
 					.izquierda-curriculum{
-						background-image: url(".get_option('background-curriculum').");
+						background-image: url(".get_option('background-curriculum').")!important;
 					}
 					.seccion-contador{
-						background-image: url(".get_option('background-estadisticas').");
+						background-image: url(".get_option('background-estadisticas').")!important;
 					}
 					footer{
-						background-image: url(".get_option('background-contacto').");
+						background-image: url(".get_option('background-contacto').")!important;
 					}
 				</style>";
 	?>

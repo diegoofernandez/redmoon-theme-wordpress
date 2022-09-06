@@ -421,7 +421,7 @@ Text Domain: redmoon
     width: 30%;
   }
   .box-logo img{
-    width: 80%;
+    width: 70%;
     margin-left: 10%;
   }
   .box-logo a{
@@ -2625,7 +2625,45 @@ aside ol li .children{
 .mc4wp-form-fields p:nth-child(2) input:hover{
   background-color: rgba(238, 82, 83,1.0);
 }
-
+/*
+ *
+ * Estilos Portfolio redmoon PLUGIN: portfolio;
+ *
+ */
+div.tlp-overlay{
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.tlp-portfolio-thum tlp-item{
+  margin-bottom: 0px;
+}
+.tlp-content{
+  margin-top: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  background: #222;
+}
+.tlp-content-holder h3{
+  padding: 5px;
+  background: #222;
+  line-height: 0px;
+  box-sizing: border-box;
+  margin-top: -10px;
+}
+.tlp-content-holder h3 a{
+  color: rgba(238, 82, 83,1.0) !important;
+  line-height: 20px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.tlp-portfolio-sd{
+  color: #fff;
+  font-family: "Ubuntu";
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: justify;
+  line-height: 15px;
+}
 
 
  

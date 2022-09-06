@@ -200,24 +200,27 @@
 				<div><p tabindex="0">FOTOGRAFÍA</p></div>
 			</div>
 			<div class="seccion-todo-portfolio">
-				<?php 
+				<?php echo do_shortcode( '[tlpportfolio id="377" title=""]' ) ?>
+			</div>
+			<!--<div class="seccion-todo-portfolio">-->
+				<?php /*
 					$args_portfolio_redmoon = [
 						'post_type' => 'portfolio_redmoon',
 						'posts_per_page' => 30
 					]; 
 					$loopPortfolioRedmoon = new WP_Query($args_portfolio_redmoon);
 					while($loopPortfolioRedmoon->have_posts()):
-						$loopPortfolioRedmoon->the_post();
+						$loopPortfolioRedmoon->the_post();*/
 				?>
-				<div class="portfolio-individual">
-					<img src="<?php echo get_the_post_thumbnail_url( ); ?>" class="imagen-portfolio-individual">
+				<!--<div class="portfolio-individual">
+					<img src="<?php //echo get_the_post_thumbnail_url( ); ?>" class="imagen-portfolio-individual">
 					<div class="float-box-portfolio-individual">
-						<h5><?php echo get_post_meta(get_the_ID(), 'meta_categoria_portfolio', true);?></h5>
-						<a href="<?php the_permalink( ); ?>"><button><i class="icon ion-md-link"></i></button></a>
+						<h5><?php //echo get_post_meta(get_the_ID(), 'meta_categoria_portfolio', true);?></h5>
+						<a href="<?php //the_permalink( ); ?>"><button><i class="icon ion-md-link"></i></button></a>
 						<button><i class="icon ion-md-search"></i></button>
 					</div>
-				</div>
-				<?php endwhile; ?> 
+				</div>-->
+				<?php// endwhile; ?> 
 				<!--<div class="portfolio-individual">
 					<img src="assets/img/portfolio2.jpg" class="imagen-portfolio-individual">
 					<div class="float-box-portfolio-individual">
